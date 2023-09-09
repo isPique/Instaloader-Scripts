@@ -35,3 +35,4 @@
 * **6- Find the Session ID and CSRF Token**: In the list of cookies you should see one labeled "Session ID" or something similar. The name of the session cookie may vary depending on the website or application you are using. The value of this cookie is your session ID. Likewise, in the list of cookies, you should see one labeled "CSRF Token" or something similar. The value of this cookie is your CSRF (Cross-Site Request Forgery) Token.
 
 * After following all these steps you should see something like this;
+![Cookies](https://github.com/isPique/Instaloader-Scripts/assets/139041426/987ffb87-79a1-4978-b0a5-dc1e1d583e7a)
