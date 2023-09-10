@@ -35,4 +35,9 @@
 * **6- Find the Session ID and CSRF Token**: In the list of cookies you should see one labeled "Session ID" or something similar. The name of the session cookie may vary depending on the website or application you are using. The value of this cookie is your session ID. Likewise, in the list of cookies, you should see one labeled "CSRF Token" or something similar. The value of this cookie is your CSRF (Cross-Site Request Forgery) Token.
 
 * After following all these steps you should see something like this;
+
 ![Cookies](https://github.com/isPique/Instaloader-Scripts/assets/139041426/987ffb87-79a1-4978-b0a5-dc1e1d583e7a)
+
+* Set your own **username**, **password**, **Session ID**, **CSRF Token**, and the **username of the person who has the posts you want to download** in the script you intend to use and run the script. You'll see that the posts start to download in the directory where you run the script.
+
+* Additionally, when you run the script, it saves your cookies to a text file named `cookies.txt`. This means you won't need to use your credentials in subsequent runs. The script logs in with the cookie file in second and subsequent executions.
