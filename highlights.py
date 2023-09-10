@@ -30,6 +30,7 @@ if instance.context.is_logged_in:
 else:
     print("An error occurred while logging into the account.")
 
+# Enter the username with the highlights you want to download
 user = ""
 profile = instaloader.Profile.from_username(instance.context, username = user)
 
