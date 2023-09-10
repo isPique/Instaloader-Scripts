@@ -1,3 +1,9 @@
+# INSTALLATION
+
+```py
+pip install requirements.txt
+```
+
 # Instaloader Auxiliar Scripts
 * Here, you'll find some scripts that download an Instagram account's posts, stories, etc.
 
