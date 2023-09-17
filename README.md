@@ -1,11 +1,11 @@
+# Instaloader Auxiliar Scripts
+* Here, you'll find some scripts that download an Instagram account's posts, stories, etc.
+
 # INSTALLATION
 
 ```py
-pip install requirements.txt
+pip install -r requirements.txt
 ```
-
-# Instaloader Auxiliar Scripts
-* Here, you'll find some scripts that download an Instagram account's posts, stories, etc.
 
 # Important
 * Instaloader is constantly improving and evolving, and adapting its code to platform changes. This implies that some endpoints may change, and some of the scripts may stop working.
