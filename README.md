@@ -47,3 +47,63 @@ pip install -r requirements.txt
 * Set your own **username**, **password**, **Session ID**, **CSRF Token**, and the **username of the person who has the posts you want to download** in the script you intend to use and run the script. You'll see that the posts start to download in the directory where you run the script.
 
 * Additionally, when you run the script, it saves your cookies to a text file named `cookies.txt`. This means you won't need to use your credentials in subsequent runs. The script logs in with the cookie file in second and subsequent executions.
+
+<hr>
+
+* If you're using the firefox browser, you can use the code below to get the `cookies.txt` file.
+
+```py
+from argparse import ArgumentParser
+from glob import glob
+from os.path import expanduser
+from platform import system
+from sqlite3 import OperationalError, connect
+
+try:
+    from instaloader import ConnectionException, Instaloader
+except ModuleNotFoundError:
+    raise SystemExit("Instaloader not found.\n  pip install [--user] instaloader")
+
+
+def get_cookiefile():
+    default_cookiefile = {
+        "Windows": "~/AppData/Roaming/Mozilla/Firefox/Profiles/*/cookies.sqlite",
+        "Darwin": "~/Library/Application Support/Firefox/Profiles/*/cookies.sqlite",
+    }.get(system(), "~/.mozilla/firefox/*/cookies.sqlite")
+    cookiefiles = glob(expanduser(default_cookiefile))
+    if not cookiefiles:
+        raise SystemExit("No Firefox cookies.sqlite file found. Use -c COOKIEFILE.")
+    return cookiefiles[0]
+
+
+def import_session(cookiefile, sessionfile):
+    print("Using cookies from {}.".format(cookiefile))
+    conn = connect(f"file:{cookiefile}?immutable=1", uri=True)
+    try:
+        cookie_data = conn.execute(
+            "SELECT name, value FROM moz_cookies WHERE baseDomain='instagram.com'"
+        )
+    except OperationalError:
+        cookie_data = conn.execute(
+            "SELECT name, value FROM moz_cookies WHERE host LIKE '%instagram.com'"
+        )
+    instaloader = Instaloader(max_connection_attempts=1)
+    instaloader.context._session.cookies.update(cookie_data)
+    username = instaloader.test_login()
+    if not username:
+        raise SystemExit("Not logged in. Are you logged in successfully in Firefox?")
+    print("Imported session cookie for {}.".format(username))
+    instaloader.context.username = username
+    instaloader.save_session_to_file(sessionfile)
+
+
+if __name__ == "__main__":
+    p = ArgumentParser()
+    p.add_argument("-c", "--cookiefile")
+    p.add_argument("-f", "--sessionfile")
+    args = p.parse_args()
+    try:
+        import_session(args.cookiefile or get_cookiefile(), args.sessionfile)
+    except (ConnectionException, OperationalError) as e:
+        raise SystemExit("Cookie import failed: {}".format(e))
+```  
