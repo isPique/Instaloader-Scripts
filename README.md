@@ -3,7 +3,7 @@
 
 # INSTALLATION
 
-```py
+```console
 pip install -r requirements.txt
 ```
 
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 * Additionally, when you run the script, it saves your cookies to a text file named `cookies.txt`. This means you won't need to use your credentials in subsequent runs. The script logs in with the cookie file in second and subsequent executions.
 
-<hr>
+# 
 
 * If you're using the firefox browser, you can use the code below to get the `cookies.txt` file.
 
@@ -106,4 +106,12 @@ if __name__ == "__main__":
         import_session(args.cookiefile or get_cookiefile(), args.sessionfile)
     except (ConnectionException, OperationalError) as e:
         raise SystemExit("Cookie import failed: {}".format(e))
-```  
+```
+
+* Example usage:
+```console
+python whatever_you_named_your_file.py --sessionfile "path\to\your\Instaloader Scripts\cookies.txt"
+```
+# Donations Accepted:
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/ispique)
