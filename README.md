@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 # Usage
 
-* Please make sure you don't use a VPN before running the script, because if you use VPN while running the script, this happens;
+* Please make sure you don't use a VPN before running the script, because if you do, this happens;
 
 ![Action Blocked](https://github.com/isPique/Instaloader-Scripts/assets/139041426/723a4edf-806b-4e69-85d6-c0c2499db226)
 
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 * Set your own Instagram username and password on `posts.py`, `stories.py` and `highlights.py` (personal account not recommended just create a new account). If you want to download your personal account's saved posts, you can use your personal account on `saved_posts.py`.
 
-* If you get an error like `JSON Query to ANY_USERNAME_HERE/: Could not find "window._sharedData" in html response.` (which will happen with a 99% probability), you can login with your cookies.
+* If you get an error like `JSON Query to accounts/login/: Could not find "window._sharedData" in html response.` (which will happen with a 99% probability), you can login with your cookies.
 
 * You can follow these steps to login with cookies;
 
