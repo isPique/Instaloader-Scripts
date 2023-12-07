@@ -3,7 +3,7 @@
 
 # INSTALLATION
 
-```console
+```powershell
 pip install -r requirements.txt
 ```
 
@@ -109,7 +109,7 @@ if __name__ == "__main__":
 ```
 
 * Example usage:
-```console
+```powershell
 python whatever_you_named_your_file.py --sessionfile "path\to\your\Instaloader Scripts\cookies.txt"
 ```
 # Donations Accepted:
