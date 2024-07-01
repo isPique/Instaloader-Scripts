@@ -3,6 +3,12 @@
 
 # INSTALLATION
 
+1. Clone the repository:
+```bash
+git clone https://github.com/isPique/Instaloader-Scripts.git
+```
+
+2. Navigate to the project directory:
 ```bash
 pip install -r requirements.txt
 ```
