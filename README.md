@@ -10,6 +10,11 @@ git clone https://github.com/isPique/Instaloader-Scripts.git
 
 2. Navigate to the project directory:
 ```bash
+cd Instaloader-Scripts
+```
+
+3. Install required libraries
+```bash
 pip install -r requirements.txt
 ```
 
