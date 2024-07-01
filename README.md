@@ -37,19 +37,19 @@ pip install -r requirements.txt
 
 * If you get an error like `JSON Query to accounts/login/: Could not find "window._sharedData" in html response.` (which will happen with a 99% probability), you can login with your cookies.
 
-* You can follow these steps to login with cookies;
+## How to log in with cookies;
 
-* **1- Login to Instagram**: Login to Instagram in your browser with your username and password.
+**1- Login to Instagram**: Login to Instagram in your browser with your username and password.
 
-* **2- Open Developer Tools**: In most web browsers, you can access developer tools by right-clicking on a webpage and selecting "Inspect" or "Inspect Element." Alternatively, you can press F12 or Ctrl+Shift+I to open developer tools.
+**2- Open Developer Tools**: In most web browsers, you can access developer tools by right-clicking on a webpage and selecting "Inspect" or "Inspect Element." Alternatively, you can press F12 or Ctrl+Shift+I to open developer tools.
 
-* **3- Navigate to the Application or Storage Tab**: In the developer tools window, there should be a tab called "Application" or "Storage" (the exact name may vary depending on the browser). Click on it.
+**3- Navigate to the Application or Storage Tab**: In the developer tools window, there should be a tab called "Application" or "Storage" (the exact name may vary depending on the browser). Click on it.
 
-* **4- Expand Cookies**: In the Application or Storage tab, you'll find a section for "Cookies" in the left sidebar. Expand this section by clicking on it.
+**4- Expand Cookies**: In the Application or Storage tab, you'll find a section for "Cookies" in the left sidebar. Expand this section by clicking on it.
 
-* **5- Find the Cookie for Instagram**: Look for the https://www.instagram.com/ link. Click on it to view the cookies.
+**5- Find the Cookie for Instagram**: Look for the https://www.instagram.com/ link. Click on it to view the cookies.
 
-* **6- Find the Session ID and CSRF Token**: In the list of cookies you should see one labeled "Session ID" or something similar. The name of the session cookie may vary depending on the website or application you are using. The value of this cookie is your session ID. Likewise, in the list of cookies, you should see one labeled "CSRF Token" or something similar. The value of this cookie is your CSRF (Cross-Site Request Forgery) Token.
+**6- Find the Session ID and CSRF Token**: In the list of cookies you should see one labeled "Session ID" or something similar. The name of the session cookie may vary depending on the website or application you are using. The value of this cookie is your session ID. Likewise, in the list of cookies, you should see one labeled "CSRF Token" or something similar. The value of this cookie is your CSRF (Cross-Site Request Forgery) Token.
 
 * After following all these steps you should see something like this;
 
