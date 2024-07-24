@@ -123,6 +123,3 @@ if __name__ == "__main__":
 ```bash
 python whatever_you_named_your_file.py --sessionfile "path\to\your\Instaloader Scripts\cookies.txt"
 ```
-# Donations Accepted:
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/ispique)
