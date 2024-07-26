@@ -1,6 +1,11 @@
 # Instaloader Auxiliar Scripts
 * Here, you'll find some scripts that download an Instagram account's posts, stories, etc.
 
+> [!IMPORTANT]
+> * Instaloader is constantly improving and evolving, and adapting its code to platform changes. This implies that some endpoints may change, and some of the scripts may stop working.
+> * The objective of this repository is to serve as an example, it has educational purposes, and in no case does it pretend to be perfect or fully functional.
+> * Please, see: [Instaloader](https://instaloader.github.io/)
+
 # INSTALLATION
 
 1. Clone the repository:
@@ -18,16 +23,10 @@ cd Instaloader-Scripts
 pip install -r requirements.txt
 ```
 
-# Important
-* Instaloader is constantly improving and evolving, and adapting its code to platform changes. This implies that some endpoints may change, and some of the scripts may stop working.
-
-* The objective of this repository is to serve as an example, it has educational purposes, and in no case does it pretend to be perfect or fully functional.
-
-* Please, see: [Instaloader](https://instaloader.github.io/)
-
 # Usage
 
-* Please make sure you don't use a VPN before running the script, because if you do, this happens;
+> [!WARNING]
+> Please make sure you don't use a VPN before running the script, because if you do, this happens;
 
 ![Action Blocked](https://github.com/isPique/Instaloader-Scripts/assets/139041426/723a4edf-806b-4e69-85d6-c0c2499db226)
 
@@ -37,7 +36,7 @@ pip install -r requirements.txt
 
 * If you get an error like `JSON Query to accounts/login/: Could not find "window._sharedData" in html response.` (which will happen with a 99% probability), you can login with your cookies.
 
-## How to log in with cookies;
+## How to log in with cookies?
 
 **1- Login to Instagram**: Login to Instagram in your browser with your username and password.
 
@@ -61,7 +60,8 @@ pip install -r requirements.txt
 
 # 
 
-* If you're using the firefox browser, you can use the code below to get the `cookies.txt` file.
+> [!TIP]
+> If you're using the firefox browser, you can use the code below to get the `cookies.txt` file.
 
 ```py
 from argparse import ArgumentParser
