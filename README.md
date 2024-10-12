@@ -1,5 +1,5 @@
 # Instaloader Auxiliar Scripts
-* Here, you'll find some scripts that download an Instagram account's posts, stories, etc.
+Here, you'll find some scripts that download an Instagram account's posts, stories, etc.
 
 > [!IMPORTANT]
 > * Instaloader is constantly improving and evolving, and adapting its code to platform changes. This implies that some endpoints may change, and some of the scripts may stop working.
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 > [!WARNING]
 > Please make sure you don't use a VPN before running the script, because if you do, this happens;
 
-![Action Blocked](https://github.com/isPique/Instaloader-Scripts/assets/139041426/723a4edf-806b-4e69-85d6-c0c2499db226)
+![Action Blocked](https://github.com/isPique/Instaloader-Scripts/blob/main/images/Action%20Blocked%20-%20Error.jpeg)
 
 * Anyways. You'll need to set up a few things before running the script.
 
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 * After following all these steps you should see something like this;
 
-![Cookies](https://github.com/isPique/Instaloader-Scripts/assets/139041426/987ffb87-79a1-4978-b0a5-dc1e1d583e7a)
+![Cookies](https://github.com/isPique/Instaloader-Scripts/blob/main/images/Cookies.jpg)
 
 * Set your own **username**, **password**, **Session ID**, **CSRF Token**, and the **username of the person who has the posts you want to download** in the script you intend to use and run the script. You'll see that the posts start to download in the directory where you run the script.
 
